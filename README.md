@@ -19,5 +19,7 @@ You should see two video streams of yourself.
 
 If you want to chat with someone, simply send them the url, e.g http://your_web_facing_server:3002/your_room_name
 
+A demo is available at [http://loyolalawtech.org:3002](http://loyolalawtech.org:3002)
+
 Note that, as of December 2013, WebRTC is only supported in Chrome and Firefox. For a much more advanced demo of WebRTC,
 check out [Vmux](http://vmux.co/).
