@@ -43,7 +43,7 @@ socket.onmessage = function(message) {
 var pc;
 var configuration = {"iceServers": [{"url": "stun:stun.l.google.com:19302"}]};
 var stream;
-var pc = new webkitRTCPeerConnection(configuration);
+var pc = new RTCPeerConnection(configuration);
 var connected = false;
 var mediaConstraints = {
   'mandatory': {
@@ -67,21 +67,21 @@ pc.onicecandidate = function(e) {
 
 pc.onaddstream = function(e) {
   console.log('start remote video stream');
-  vid2.src = webkitURL.createObjectURL(e.stream);
+  vid2.src = URL.createObjectURL(e.stream);
   vid2.play();
 };
 
 function broadcast() {
   // gets local video stream and renders to vid1
-  navigator.webkitGetUserMedia({audio: true, video: true}, function(s) {
+  getUserMedia({audio: true, video: true}, function(s) {
     stream = s;
     pc.addStream(s);
-    vid1.src = webkitURL.createObjectURL(s);
+    vid1.src = URL.createObjectURL(s);
     vid1.play();
     // initCall is set in views/index and is based on if there is another person in the room to connect to
     if(initCall)
       start();
-  });
+  }, function(err){console.log('Fail ' + err);});
 }
 
 function start() {
