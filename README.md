@@ -15,10 +15,8 @@ with clients and colleagues without the use of third-party services like Skype a
 
 Then open up two browser windows pointed to `localhost:3002/your_room_name`. 
 
-You should see something like this two video images of yourself.  
+You should see two video streams of yourself.  
 
 If you want to chat with someone, simply send them the url, e.g http://your_web_facing_server:3002/your_room_name
-
-![screenshot1](http://f.cl.ly/items/0d223G2I1K3H381v1H3E/Screen%20Shot%202013-01-13%20at%203.09.17%20PM.png)
 
 Note that, as of December 2013, WebRTC is only supported in Chrome and Firefox.
