@@ -1,5 +1,8 @@
 # Simple WebRTC Demo
 
+This is a fork of keithnorm's simple webrtc video chat.  The purpose is for showing some of WebRTC's features to the members of the Louisiana State Bar Association's
+Access to Justice Tech Committee.
+
 WebRTC is a peer to peer standard proposal from Google allowing browsers to connect directly and transfer information without a central server. This allows browsers to share raw data as well as audio/video.
 
 This is a very simple video chat using WebRTC. I worked on it because I couldn't completely grok what was going on in [apprtc.appspot.com](apprtc.appspot.com) - Google's canonical example. My version uses websockets instead of Google App Engine Channels, so you can see what the socket responses are doing, and I think the front end code is a bit simpler too.
