@@ -14,10 +14,17 @@
 
   app.use(express["static"]('./public'));
 
+  app.get('/', function(req, res) {
+    var rand = Math.random().toString(36).substring(7);
+    res.redirect('/' + rand);
+
+  });
+
   app.get('/:room', function(req, res) {
     var _ref;
     return res.render('index.jade', {
       params: req.query,
+      url: req.host + req.path,
       room_count: ((_ref = io.clientsByRoom[req.params.room]) != null ? _ref.length : void 0) || 0
     });
   });
