@@ -4,7 +4,7 @@ This is a fork of keithnorm's [Simple Webrtc Video Chat](https://github.com/keit
 some of WebRTC's features to the members of the [Louisiana State Bar Association's Access to Justice Tech Committee.](http://www.lsba.org/atj/)
 
 WebRTC is a peer to peer standard allowing browsers to connect directly and transfer information without a central server. This means you can video chat
-with clients and colleagues without the use of third-party services like Skype and Google Hangouts. Note that all webRTC streams are encrypted with 128-bit AES.
+with clients and colleagues without the use of third-party services like Skype and Google Hangouts. Note that all WebRTC streams are encrypted with 128-bit AES.
 
 # Get It Running
 ## (Requires node.js)
