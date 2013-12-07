@@ -24,7 +24,7 @@
     var _ref;
     return res.render('index.jade', {
       params: req.query,
-      url: req.host + req.path,
+      url: req.host + ':3002' + req.path,
       room_count: ((_ref = io.clientsByRoom[req.params.room]) != null ? _ref.length : void 0) || 0
     });
   });
